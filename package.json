@@ -1,0 +1,14 @@
+{
+    "name": "dashboard-fullstack",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "install": "npm run install-all",
+        "install-all": "npm --prefix Frontend install && npm --prefix Backend install",
+        "dev": "concurrently \"npm run dev --prefix Frontend\" \"npm run dev --prefix Backend\"",
+        "start": "concurrently \"npm run start --prefix Frontend\" \"npm run start --prefix Backend\""
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
